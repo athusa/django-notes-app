@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/sakshi']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-credentials', url: 'https://github.com/SakshiShekharShukla/Sakshi.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/sakshi']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-credentials', url: 'https://github.com/athusa/django-notes-app.git']]])
             }
         }
 
